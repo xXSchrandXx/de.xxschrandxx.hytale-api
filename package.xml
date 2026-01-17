@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="de.xxschrandxx.hytale-api"
+	xmlns="https://www.woltlab.com"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.5/package.xsd">
+	<packageinformation>
+		<packagename><![CDATA[Hytale-API]]></packagename>
+		<packagename language="de"><![CDATA[Hytale-API]]></packagename>
+		<packagedescription><![CDATA[API for Hytale through WSC-Bridge.]]></packagedescription>
+		<packagedescription language="de"><![CDATA[API für Hytale durch WSC-Bridge.]]></packagedescription>
+		<version>1.0.0</version>
+		<date>2022-12-22</date>
+	</packageinformation>
+
+	<authorinformation>
+		<author><![CDATA[xXSchrandXx]]></author>
+	</authorinformation>
+
+	<requiredpackages>
+		<requiredpackage minversion="6.0.0 RC 1">com.woltlab.wcf</requiredpackage>
+	</requiredpackages>
+
+	<excludedpackages>
+		<excludedpackage version="7.0.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+	</excludedpackages>
+
+	<instructions type="install">
+		<instruction type="acpTemplate"/>
+		<instruction type="file"/>
+		<instruction type="language"/>
+		<instruction type="acpMenu"/>
+		<instruction type="userGroupOption"/>
+		<instruction type="option"/>
+		<instruction type="objectType"/>
+		<instruction type="database">acp/database/install_de.xxschrandxx.hytale-api.php</instruction>
+	</instructions>
+</package>

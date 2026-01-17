@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language languagecode="en"
+	xmlns="https://www.woltlab.com"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.5/language.xsd">
+	<category name="wcf.acp.hytaleSelectOptionType">
+		<item name="wcf.acp.hytaleSelectOptionType.noServer"><![CDATA[You have not yet added a Hytale server. You can do this at <a href="{link controller="HytaleAdd"}{/link}">Add Hytale-Server</a>.]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.hytale"><![CDATA[Hytale]]></item>
+		<item name="wcf.acp.option.category.hytale_floodgate"><![CDATA[Floodgate]]></item>
+		<item name="wcf.acp.option.hytale_floodgate_resettime"><![CDATA[Reset-time]]></item>
+		<item name="wcf.acp.option.hytale_floodgate_maxrequests"><![CDATA[Maximum Requests]]></item>
+		<item name="wcf.acp.option.hytale_floodgate_maxrequests.description"><![CDATA[Set <kbd>-1</kbd> to disable.]]></item>
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.user.hytale"><![CDATA[Hytale]]></item>
+		<item name="wcf.acp.group.option.category.mod.hytale"><![CDATA[Hytale]]></item>
+		<item name="wcf.acp.group.option.category.admin.hytale"><![CDATA[Hytale]]></item>
+		<item name="wcf.acp.group.option.admin.hytale.canManageConnection"><![CDATA[Can manage Hytale-API connections.]]></item>
+	</category>
+	<category name="wcf.acp.menu">
+		<item name="wcf.acp.menu.link.configuration.hytale"><![CDATA[Hytale]]></item>
+		<item name="wcf.acp.menu.link.management.hytale"><![CDATA[Hytale]]></item>
+		<item name="wcf.acp.menu.link.configuration.hytale.hytaleList"><![CDATA[Server]]></item>
+		<item name="wcf.acp.menu.link.configuration.hytale.hytaleList.add"><![CDATA[Add Hytale-Server]]></item>
+		<item name="wcf.acp.menu.link.configuration.hytale.hytaleList.edit"><![CDATA[Edit Hytale-Server]]></item>
+	</category>
+	<category name="wcf.acp.page">
+		<item name="wcf.acp.page.hytaleList.user"><![CDATA[User]]></item>
+		<item name="wcf.acp.page.hytaleList.creationDate"><![CDATA[Creation date]]></item>
+	</category>
+	<category name="wcf.acp.form">
+		<item name="wcf.acp.form.hytaleAdd.user"><![CDATA[User]]></item>
+		<item name="wcf.acp.form.hytaleAdd.user.error.duplicate"><![CDATA[User cannot be duplicated.]]></item>
+		<item name="wcf.acp.form.hytaleAdd.password"><![CDATA[Password]]></item>
+	</category>
+</language>

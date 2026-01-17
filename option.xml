@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="https://www.woltlab.com"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.5/option.xsd">
+	<import>
+		<categories>
+			<category name="hytale">
+				<parent/>
+			</category>
+			<category name="hytale_floodgate">
+				<parent>hytale</parent>
+			</category>
+		</categories>
+		<options>
+			<option name="hytale_floodgate_resettime">
+				<categoryname>hytale_floodgate</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>10</defaultvalue>
+				<suffix>minutes</suffix>
+			</option>
+			<option name="hytale_floodgate_maxrequests">
+				<categoryname>hytale_floodgate</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>600</defaultvalue>
+			</option>
+		</options>
+	</import>
+</data>
