@@ -12,7 +12,7 @@ use wcf\event\IPsr14Event;
  * @license  Creative Commons Zero v1.0 Universal (http://creativecommons.org/publicdomain/zero/1.0/)
  * @package  WoltLabSuite\Core\Event\Hytale
  */
-final class PrepareEvent implements IPsr14Event
+class PrepareEvent implements IPsr14Event
 {
     private ServerRequestInterface $request;
     private ?JsonResponse $response;

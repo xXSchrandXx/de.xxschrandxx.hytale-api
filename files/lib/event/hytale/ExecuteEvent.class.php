@@ -2,6 +2,6 @@
 
 namespace wcf\event\hytale;
 
-class ExecuteEvent extends ValidateHeaderEvent
+class ExecuteEvent extends ValidateParametersEvent
 {
 }

@@ -18,6 +18,7 @@ use wcf\event\hytale\GetHytaleEvent;
 use wcf\event\hytale\PrepareEvent;
 use wcf\event\hytale\ReadParametersEvent;
 use wcf\event\hytale\ValidateHeaderEvent;
+use wcf\event\hytale\ValidateParametersEvent;
 use wcf\system\event\EventHandler;
 use wcf\system\flood\FloodControl;
 use wcf\system\request\RouteHandler;
@@ -32,7 +33,7 @@ use wcf\util\StringUtil;
  */
 abstract class AbstractHytaleGETAction implements RequestHandlerInterface
 {
-    private string $floodgate = 'de.xxschrarndxx.wsc.hytale-api.floodgate';
+    private string $floodgate = 'de.xxschrandxx.hytale-api.floodgate';
 
     /**
      * List of available hytaleIDs
@@ -91,7 +92,10 @@ abstract class AbstractHytaleGETAction implements RequestHandlerInterface
         }
 
         // reads Parameters
-        $parameters = [];
+        $parameters = [
+            'hytale' => $hytale,
+            'hytaleID' => $hytale->hytaleID
+        ];
         $this->readParameters($request, $parameters, $response);
         $event = new ReadParametersEvent($request, $hytale, $parameters, $response);
         $eventHandler->fire($event);
@@ -103,7 +107,7 @@ abstract class AbstractHytaleGETAction implements RequestHandlerInterface
 
         // validates Parameters
         $this->validateParameters($parameters, $response);
-        $event = new ReadParametersEvent($request, $hytale, $parameters, $response);
+        $event = new ValidateParametersEvent($request, $hytale, $parameters, $response);
         $eventHandler->fire($event);
         $response = $event->getResponse();
         $parameters = $event->getParameters();
