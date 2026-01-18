@@ -13,5 +13,7 @@ This plugin is an interface between other plugins and Hytale servers. Hytale API
 <requiredpackage minversion="{$version}">de.xxschrandxx.hytale-api</requiredpackage >
 ```
 # Links
-## Donate
 * [PayPal](https://www.paypal.com/donate/?hosted_button_id=RFYYT7QSAU7YJ)
+* [GitHub](https://github.com/xXSchrandXx?tab=repositories)
+* [Plugins von WoltLab](https://www.woltlab.com/pluginstore/user-file-list/1503877-xxschrandxx/)
+* [Plugins von SpigotMC](https://www.spigotmc.org/resources/authors/_xxschrandxx_.228634/)
